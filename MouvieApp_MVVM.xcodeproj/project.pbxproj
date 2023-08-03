@@ -8,24 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		04B224572A78D9D500EE8659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B224562A78D9D500EE8659 /* AppDelegate.swift */; };
-		04B224592A78D9D500EE8659 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B224582A78D9D500EE8659 /* SceneDelegate.swift */; };
-		04B2245B2A78D9D500EE8659 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B2245A2A78D9D500EE8659 /* ViewController.swift */; };
-		04B2245E2A78D9D500EE8659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B2245C2A78D9D500EE8659 /* Main.storyboard */; };
 		04B224612A78D9D500EE8659 /* MouvieApp_MVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04B2245F2A78D9D500EE8659 /* MouvieApp_MVVM.xcdatamodeld */; };
 		04B224632A78D9D700EE8659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B224622A78D9D700EE8659 /* Assets.xcassets */; };
 		04B224662A78D9D700EE8659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B224642A78D9D700EE8659 /* LaunchScreen.storyboard */; };
+		04B224722A78DBDB00EE8659 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B224702A78DBDB00EE8659 /* MainViewController.swift */; };
+		04B224732A78DBDB00EE8659 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B224712A78DBDB00EE8659 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04B224532A78D9D500EE8659 /* MouvieApp_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MouvieApp_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B224562A78D9D500EE8659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04B224582A78D9D500EE8659 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04B2245A2A78D9D500EE8659 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04B2245D2A78D9D500EE8659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04B224602A78D9D500EE8659 /* MouvieApp_MVVM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MouvieApp_MVVM.xcdatamodel; sourceTree = "<group>"; };
 		04B224622A78D9D700EE8659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04B224652A78D9D700EE8659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04B224672A78D9D700EE8659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B224702A78DBDB00EE8659 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		04B224712A78DBDB00EE8659 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +56,87 @@
 		04B224552A78D9D500EE8659 /* MouvieApp_MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				04B2247B2A78DFEC00EE8659 /* Networking */,
+				04B2247A2A78DFC300EE8659 /* Extensions */,
+				04B224792A78DEA800EE8659 /* Resources */,
+				04B224782A78DE9800EE8659 /* Classes */,
+				04B224772A78DE9200EE8659 /* Model */,
+				04B224762A78DE8600EE8659 /* Controllers */,
+				04B224752A78DE7B00EE8659 /* ViewModel */,
+				04B224742A78DE7200EE8659 /* View */,
 				04B224562A78D9D500EE8659 /* AppDelegate.swift */,
-				04B224582A78D9D500EE8659 /* SceneDelegate.swift */,
-				04B2245A2A78D9D500EE8659 /* ViewController.swift */,
-				04B2245C2A78D9D500EE8659 /* Main.storyboard */,
-				04B224622A78D9D700EE8659 /* Assets.xcassets */,
-				04B224642A78D9D700EE8659 /* LaunchScreen.storyboard */,
 				04B224672A78D9D700EE8659 /* Info.plist */,
 				04B2245F2A78D9D500EE8659 /* MouvieApp_MVVM.xcdatamodeld */,
 			);
 			path = MouvieApp_MVVM;
+			sourceTree = "<group>";
+		};
+		04B2246D2A78DAB900EE8659 /* MainViewConroller */ = {
+			isa = PBXGroup;
+			children = (
+				04B224702A78DBDB00EE8659 /* MainViewController.swift */,
+				04B224712A78DBDB00EE8659 /* MainViewController.xib */,
+			);
+			path = MainViewConroller;
+			sourceTree = "<group>";
+		};
+		04B224742A78DE7200EE8659 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04B224642A78D9D700EE8659 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04B224752A78DE7B00EE8659 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04B224762A78DE8600EE8659 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04B2246D2A78DAB900EE8659 /* MainViewConroller */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		04B224772A78DE9200EE8659 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04B224782A78DE9800EE8659 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		04B224792A78DEA800EE8659 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04B224622A78D9D700EE8659 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04B2247A2A78DFC300EE8659 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		04B2247B2A78DFEC00EE8659 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,8 +198,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B224662A78D9D700EE8659 /* LaunchScreen.storyboard in Resources */,
+				04B224732A78DBDB00EE8659 /* MainViewController.xib in Resources */,
 				04B224632A78D9D700EE8659 /* Assets.xcassets in Resources */,
-				04B2245E2A78D9D500EE8659 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +210,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04B2245B2A78D9D500EE8659 /* ViewController.swift in Sources */,
+				04B224722A78DBDB00EE8659 /* MainViewController.swift in Sources */,
 				04B224572A78D9D500EE8659 /* AppDelegate.swift in Sources */,
 				04B224612A78D9D500EE8659 /* MouvieApp_MVVM.xcdatamodeld in Sources */,
-				04B224592A78D9D500EE8659 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		04B2245C2A78D9D500EE8659 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04B2245D2A78D9D500EE8659 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04B224642A78D9D700EE8659 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +356,7 @@
 				INFOPLIST_FILE = MouvieApp_MVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,7 +384,7 @@
 				INFOPLIST_FILE = MouvieApp_MVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
