@@ -13,6 +13,8 @@
 		04B224662A78D9D700EE8659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B224642A78D9D700EE8659 /* LaunchScreen.storyboard */; };
 		04B224722A78DBDB00EE8659 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B224702A78DBDB00EE8659 /* MainViewController.swift */; };
 		04B224732A78DBDB00EE8659 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B224712A78DBDB00EE8659 /* MainViewController.xib */; };
+		04B224A62A7B93C700EE8659 /* MainViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B224A52A7B93C700EE8659 /* MainViewController+TableView.swift */; };
+		04B224A82A7B950D00EE8659 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B224A72A7B950D00EE8659 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		04B224672A78D9D700EE8659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04B224702A78DBDB00EE8659 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		04B224712A78DBDB00EE8659 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		04B224A52A7B93C700EE8659 /* MainViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+TableView.swift"; sourceTree = "<group>"; };
+		04B224A72A7B950D00EE8659 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 			children = (
 				04B224702A78DBDB00EE8659 /* MainViewController.swift */,
 				04B224712A78DBDB00EE8659 /* MainViewController.xib */,
+				04B224A52A7B93C700EE8659 /* MainViewController+TableView.swift */,
 			);
 			path = MainViewConroller;
 			sourceTree = "<group>";
@@ -91,6 +96,7 @@
 		04B224752A78DE7B00EE8659 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				04B224A72A7B950D00EE8659 /* MainViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -210,9 +216,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B224A82A7B950D00EE8659 /* MainViewModel.swift in Sources */,
 				04B224722A78DBDB00EE8659 /* MainViewController.swift in Sources */,
 				04B224572A78D9D500EE8659 /* AppDelegate.swift in Sources */,
 				04B224612A78D9D500EE8659 /* MouvieApp_MVVM.xcdatamodeld in Sources */,
+				04B224A62A7B93C700EE8659 /* MainViewController+TableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
