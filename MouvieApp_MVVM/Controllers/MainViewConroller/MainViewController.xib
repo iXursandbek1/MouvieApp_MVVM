@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="MouvieApp_MVVM" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="jIO-8f-kPE" id="qyA-yJ-ev5"/>
                 <outlet property="tableView" destination="X91-7U-QD2" id="pFe-O1-d2Y"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,12 +24,18 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="jIO-8f-kPE">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                    <color key="color" systemColor="systemGray2Color"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="X91-7U-QD2" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="dhj-ET-S6S"/>
                 <constraint firstItem="X91-7U-QD2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="eqm-Bi-b8e"/>
+                <constraint firstItem="jIO-8f-kPE" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="iCf-IL-Nv8"/>
+                <constraint firstItem="jIO-8f-kPE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="n12-aT-VRz"/>
                 <constraint firstItem="X91-7U-QD2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pQK-xv-3Og"/>
                 <constraint firstAttribute="bottom" secondItem="X91-7U-QD2" secondAttribute="bottom" id="w7w-Hg-i51"/>
             </constraints>
@@ -38,6 +45,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

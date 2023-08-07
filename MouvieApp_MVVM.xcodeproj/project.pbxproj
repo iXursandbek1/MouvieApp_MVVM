@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A859B22A7E15E600E4DCFF /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A859B12A7E15E600E4DCFF /* NetworkConstant.swift */; };
+		04A859B42A7E183800E4DCFF /* TrendingMouvieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A859B32A7E183800E4DCFF /* TrendingMouvieModel.swift */; };
+		04A859B62A7E19CB00E4DCFF /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A859B52A7E19CB00E4DCFF /* APICaller.swift */; };
+		04A859B82A80A25D00E4DCFF /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A859B72A80A25D00E4DCFF /* Observable.swift */; };
 		04B224572A78D9D500EE8659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B224562A78D9D500EE8659 /* AppDelegate.swift */; };
 		04B224612A78D9D500EE8659 /* MouvieApp_MVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04B2245F2A78D9D500EE8659 /* MouvieApp_MVVM.xcdatamodeld */; };
 		04B224632A78D9D700EE8659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B224622A78D9D700EE8659 /* Assets.xcassets */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04A859B12A7E15E600E4DCFF /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
+		04A859B32A7E183800E4DCFF /* TrendingMouvieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMouvieModel.swift; sourceTree = "<group>"; };
+		04A859B52A7E19CB00E4DCFF /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		04A859B72A80A25D00E4DCFF /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		04B224532A78D9D500EE8659 /* MouvieApp_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MouvieApp_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B224562A78D9D500EE8659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04B224602A78D9D500EE8659 /* MouvieApp_MVVM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MouvieApp_MVVM.xcdatamodel; sourceTree = "<group>"; };
@@ -112,6 +120,7 @@
 		04B224772A78DE9200EE8659 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04A859B32A7E183800E4DCFF /* TrendingMouvieModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,6 +128,7 @@
 		04B224782A78DE9800EE8659 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				04A859B72A80A25D00E4DCFF /* Observable.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -141,6 +151,8 @@
 		04B2247B2A78DFEC00EE8659 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				04A859B12A7E15E600E4DCFF /* NetworkConstant.swift */,
+				04A859B52A7E19CB00E4DCFF /* APICaller.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -220,7 +232,11 @@
 				04B224722A78DBDB00EE8659 /* MainViewController.swift in Sources */,
 				04B224572A78D9D500EE8659 /* AppDelegate.swift in Sources */,
 				04B224612A78D9D500EE8659 /* MouvieApp_MVVM.xcdatamodeld in Sources */,
+				04A859B82A80A25D00E4DCFF /* Observable.swift in Sources */,
+				04A859B22A7E15E600E4DCFF /* NetworkConstant.swift in Sources */,
+				04A859B42A7E183800E4DCFF /* TrendingMouvieModel.swift in Sources */,
 				04B224A62A7B93C700EE8659 /* MainViewController+TableView.swift in Sources */,
+				04A859B62A7E19CB00E4DCFF /* APICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
