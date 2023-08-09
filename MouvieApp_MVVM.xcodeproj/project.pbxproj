@@ -11,6 +11,11 @@
 		04A859B42A7E183800E4DCFF /* TrendingMouvieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A859B32A7E183800E4DCFF /* TrendingMouvieModel.swift */; };
 		04A859B62A7E19CB00E4DCFF /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A859B52A7E19CB00E4DCFF /* APICaller.swift */; };
 		04A859B82A80A25D00E4DCFF /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A859B72A80A25D00E4DCFF /* Observable.swift */; };
+		04A859BC2A80D98600E4DCFF /* MainMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A859BA2A80D98600E4DCFF /* MainMovieCell.swift */; };
+		04A859BD2A80D98600E4DCFF /* MainMovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A859BB2A80D98600E4DCFF /* MainMovieCell.xib */; };
+		04A859BF2A80E2C800E4DCFF /* UIViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A859BE2A80E2C800E4DCFF /* UIViewExtention.swift */; };
+		04A859C12A80E48200E4DCFF /* MovieTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A859C02A80E48200E4DCFF /* MovieTableViewCellViewModel.swift */; };
+		04A859E72A83601900E4DCFF /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 04A859E62A83601900E4DCFF /* SDWebImage */; };
 		04B224572A78D9D500EE8659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B224562A78D9D500EE8659 /* AppDelegate.swift */; };
 		04B224612A78D9D500EE8659 /* MouvieApp_MVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04B2245F2A78D9D500EE8659 /* MouvieApp_MVVM.xcdatamodeld */; };
 		04B224632A78D9D700EE8659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B224622A78D9D700EE8659 /* Assets.xcassets */; };
@@ -26,6 +31,10 @@
 		04A859B32A7E183800E4DCFF /* TrendingMouvieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMouvieModel.swift; sourceTree = "<group>"; };
 		04A859B52A7E19CB00E4DCFF /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		04A859B72A80A25D00E4DCFF /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		04A859BA2A80D98600E4DCFF /* MainMovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMovieCell.swift; sourceTree = "<group>"; };
+		04A859BB2A80D98600E4DCFF /* MainMovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMovieCell.xib; sourceTree = "<group>"; };
+		04A859BE2A80E2C800E4DCFF /* UIViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtention.swift; sourceTree = "<group>"; };
+		04A859C02A80E48200E4DCFF /* MovieTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		04B224532A78D9D500EE8659 /* MouvieApp_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MouvieApp_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B224562A78D9D500EE8659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04B224602A78D9D500EE8659 /* MouvieApp_MVVM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MouvieApp_MVVM.xcdatamodel; sourceTree = "<group>"; };
@@ -43,12 +52,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A859E72A83601900E4DCFF /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04A859B92A80D95B00E4DCFF /* MainMovieCell */ = {
+			isa = PBXGroup;
+			children = (
+				04A859BA2A80D98600E4DCFF /* MainMovieCell.swift */,
+				04A859BB2A80D98600E4DCFF /* MainMovieCell.xib */,
+			);
+			path = MainMovieCell;
+			sourceTree = "<group>";
+		};
 		04B2244A2A78D9D500EE8659 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +115,7 @@
 		04B224742A78DE7200EE8659 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04A859B92A80D95B00E4DCFF /* MainMovieCell */,
 				04B224642A78D9D700EE8659 /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -105,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				04B224A72A7B950D00EE8659 /* MainViewModel.swift */,
+				04A859C02A80E48200E4DCFF /* MovieTableViewCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -144,6 +165,7 @@
 		04B2247A2A78DFC300EE8659 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				04A859BE2A80E2C800E4DCFF /* UIViewExtention.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -173,6 +195,9 @@
 			dependencies = (
 			);
 			name = MouvieApp_MVVM;
+			packageProductDependencies = (
+				04A859E62A83601900E4DCFF /* SDWebImage */,
+			);
 			productName = MouvieApp_MVVM;
 			productReference = 04B224532A78D9D500EE8659 /* MouvieApp_MVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -201,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 04B2244A2A78D9D500EE8659;
+			packageReferences = (
+				04A859E52A83601900E4DCFF /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 04B224542A78D9D500EE8659 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -218,6 +246,7 @@
 				04B224662A78D9D700EE8659 /* LaunchScreen.storyboard in Resources */,
 				04B224732A78DBDB00EE8659 /* MainViewController.xib in Resources */,
 				04B224632A78D9D700EE8659 /* Assets.xcassets in Resources */,
+				04A859BD2A80D98600E4DCFF /* MainMovieCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,9 +262,12 @@
 				04B224572A78D9D500EE8659 /* AppDelegate.swift in Sources */,
 				04B224612A78D9D500EE8659 /* MouvieApp_MVVM.xcdatamodeld in Sources */,
 				04A859B82A80A25D00E4DCFF /* Observable.swift in Sources */,
+				04A859C12A80E48200E4DCFF /* MovieTableViewCellViewModel.swift in Sources */,
+				04A859BC2A80D98600E4DCFF /* MainMovieCell.swift in Sources */,
 				04A859B22A7E15E600E4DCFF /* NetworkConstant.swift in Sources */,
 				04A859B42A7E183800E4DCFF /* TrendingMouvieModel.swift in Sources */,
 				04B224A62A7B93C700EE8659 /* MainViewController+TableView.swift in Sources */,
+				04A859BF2A80E2C800E4DCFF /* UIViewExtention.swift in Sources */,
 				04A859B62A7E19CB00E4DCFF /* APICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +478,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04A859E52A83601900E4DCFF /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04A859E62A83601900E4DCFF /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04A859E52A83601900E4DCFF /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		04B2245F2A78D9D500EE8659 /* MouvieApp_MVVM.xcdatamodeld */ = {
